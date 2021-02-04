@@ -253,3 +253,22 @@ h4 {
 .col-6 img:hover {
     filter: grayscale(0%);
 }
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #f5ebd8;
+    font-size: 12px; 
+    padding: 60px 0 2px;
+    padding-top: 2px;
+    text-align: center;
+ }
