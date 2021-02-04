@@ -302,7 +302,8 @@ li {
     font-size: 15px;
     padding-top: 20px;
     cursor: pointer;
-    text-align: center;  
+    text-align: center;
+    color: sienna;  
 }
 .fab {
     font-size: 1.5em; 
