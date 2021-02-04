@@ -91,3 +91,146 @@ p {
 .btn:hover {
     background: #847577;
 }
+
+/* CATEGORIES  */
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* PRACTICES */
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #847577;
+}
+
+.title::after {
+    content: '';
+    background: #847577;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 1.5s;
+}
+
+.col-4 img {
+    width: 100%;
+    cursor: pointer;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+h4 {
+    color: #847577;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em; 
+}
+
+
+.levels {
+    color: chocolate;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.btn-1 {
+    display: inline-block;
+    background: black;
+    color: blanchedalmond;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 1s;
+    margin-left: 17%;
+    margin-top: 10px;
+}
+
+.btn-1:hover {
+    background: #847577;
+}
+
+/* REVIEWS AVIS */
+
+.reviews {
+    padding-top: 25px;
+}
+
+.reviews .col-5 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 2.5s;
+}
+
+.reviews .col-5 img {
+    width: 160px;
+    margin-top: 20px;
+    border-radius: 35%;
+}
+
+.reviews .col-5:hover {
+    transform: translateY(-5px);
+    background: blanchedalmond;
+}
+
+.reviews .col-5 h3 {
+    font-weight: 600;
+    font-size: 1.5em;       
+}
+
+.col-5 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col-5 p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.rating {
+    color: chocolate;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+/* brands */
