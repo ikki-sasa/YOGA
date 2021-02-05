@@ -43,6 +43,10 @@ nav ul li {
     font-size: 20px;
 
 }
+.cart {
+    width: 30px; 
+    height: 30px;
+}
 
 a {
     text-decoration: none;
@@ -330,12 +334,48 @@ li {
 .menu-icon {
     width: 28px;
     margin-left: 10px;
+    display: none;
 }
 
 
 /* MEDIA QUERY MENU */
 
-/* @media screen  and (max-width:800px ) {
+@media screen  and (max-width:900px ) {
 
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #f7e0b7;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-left: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-}  */
+    nav ul li a {
+        color: black;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+} 
+
+/* MEDIA QUERY Phones */
+
+@media screen  and (max-width:600px ) {
+    .row {
+        text-align: center;
+
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+}
