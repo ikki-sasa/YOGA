@@ -336,6 +336,19 @@ li {
     margin-left: 10px;
     display: none;
 }
+.scroll-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.20;
+}
+
+.scroll-btn:hover {
+    color: #482620;
+}
 
 
 /* MEDIA QUERY MENU */
