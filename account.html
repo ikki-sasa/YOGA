@@ -131,11 +131,17 @@
     </script>
     <!-- JS FOR TOGGLE FORM -->
     <script>
+        
         let LoginForm = document.getElementById("LoginForm");
         let RegForm = document.getElementById("RegForm");
         let Indicator = document.getElementById("Indicator");
 
-        function regidter() {
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+        }
+
+        function login() {
             RegForm.style.transform = "translateX(300px)";
             LoginForm.style.transform = "translateX(300px)";
         }
