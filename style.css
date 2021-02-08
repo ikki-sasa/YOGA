@@ -396,8 +396,12 @@ li {
   
 }
 
+.span{
+    color: black;
+}
+
 .form-container{
-    background: #847577;
+    background: #f5ebd8;
     width: 300px;
     height: 400px;
     position: relative;
@@ -405,15 +409,15 @@ li {
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    opacity: 0.2;
-    color: #482620;
+    color: black;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .form-container span {
     font-weight: bold;
     padding: 0 10px;
-    color: #482620;
+    color: black;
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -437,7 +441,8 @@ form input {
     height: 30px;
     margin: 10px 0;
     padding: 0 10px;
-    border: 1px solid #bd081c;
+    border: 1px solid #847577;
+    border-radius: 20px;
 }
 
 
@@ -462,12 +467,13 @@ form .btn:focus {
 
 form a {
     font-size: 12px;
+    color: black;
 }
 
 #Indicator {
     width: 100px;
     border: none;
-    background: #3b5999;
+    background: black;
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
@@ -484,7 +490,7 @@ form a {
 
     nav ul {
         position: absolute;
-        top: 70px;
+        top: 90px;
         left: 0;
         background: #f7e0b7;
         width: 100%;
@@ -511,11 +517,22 @@ form a {
 /* MEDIA QUERY Phones */
 
 @media screen  and (max-width:600px ) {
+    
     .row {
         text-align: center;
 
     }
     .col-2, .col-3, .col-4 {
         flex-basis: 100%;
+    }
+
+    .menu-icon {
+        margin: -60px;
+        margin-bottom: -38px;
+    }
+
+    .cart {
+        margin: -60px;
+        margin-bottom: -50px;
     }
 }
