@@ -351,9 +351,9 @@ li {
 }
 
 /*PRCATICES START PAGE*/
-.practice-info {
+/* .practice-info {
 
-}
+} */
 
 .row-2 {
     justify-content: space-between;
@@ -388,7 +388,7 @@ li {
 
 /*PRCATICES END PAGE*/
 
-/*ACCOUNT-PAGE */
+/*ACCOUNT-PAGE START */
 
 .account-page {
     padding:50px;
@@ -479,6 +479,52 @@ form a {
     transform: translateX(100px);
     transition: transform 1s;
 }
+/*ACCOUNT-PAGE ENDS */
+
+
+/* TEACHERS PAGE START */
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #444;
+}
+
+.main .slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.main .slider .slides {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    z-index: -1; 
+}
+
+ .main .slider .slides:nth-child(1) {
+    background-image:url('img/Naara-Lestshoo.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+
+.main .slider .slides .current {
+    z-index: 1;
+    opacity: 1;
+
+
+} 
+
+/* TEACHERS PAGE ENDS */
 
 
 
