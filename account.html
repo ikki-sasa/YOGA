@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yooga life | Life style Practice</title>
+    <title>Yooga life | Life style Login Se connecter</title>
     <link rel="icon" href="img/new-yooga-up.1.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -36,58 +37,39 @@
                 <img  class="cart" src="img/cart.png"  alt="cart">
                 <img src="img/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu">
                 <!-- <i class="fab fa-opencart"></i> -->
-            </div>           
-        </div>
-    
-   
+            </div>
+    </div>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/yoga-day.jpg"  alt="yoga-day">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Se connecter</span>
+                            <span onclick="register()">S'enregistrer</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Nom utilisateur">
+                            <input type="text" placeholder="Mot de passe">
+                            <button type="submit" class="btn">Se connecter</button>
+                            <a href="">Mot de passe oublié</a>
+                        </form>
 
-    <!--PRACTICES-->
-    <div class="small-container">
-        <!-- <h2 class="title">Practices</h2> -->
-        <div class="row-2">
-            <div class="col-4-2">
-                <img src="img/ashtanga-yooga.jpg" alt="ashtanga">
-                <h4>Le plus physique Ashtanga yoga</h4>
-                <div class="practice-info">
-                    <p>Un yoga traditionnel, intense et physique, composé de six séries dont la difficulté va crescendo. "Dans un cours débutant, on aborde un peu la série primaire, à travers la séquence debout et les salutations au soleil".</p>
-                    <p>Les séquences sont fixes et ne changent jamais. Vigoureuse et vivifiante, la pratique met l'accent sur une technique de respiration particulière. </p>
-                    <p>Celles qui cherchent un yoga athlétique et qui souhaitent développer leur force et endurance. </p>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Nom utilisateur">
+                            <input type="Adresse mail" placeholder="Adresse mail">
+                            <input type="text" placeholder="Mot de passe">
+                            <button type="submit" class="btn">S'enregistrer</button>
+                        </form>
+                    </div>
                 </div>
-                <a href="" class="btn-1">Nous-contactez</a>
-            </div>
-            <div class="col-4-2">
-                <img src="img/Iyengar-yoga-coach-small.jpg" alt="Iyengar">
-                <h4>À la recherche de la précision Iyengar yoga</h4>
-                <div class="practice-info">
-                    <p>Un yoga qui accorde une importance toute particulière au placement et à l'alignement du corps. "Les mouvements sont lents et subtils, les poses maintenues pendant un certain temps".</p>
-                    <p>Il est accessible à tous -qu'on soit blessé ou enceinte de 7 mois- puisque les postures peuvent être ajustées à l'aide de briques, de bolsters. </p>
-                    <p>Pour les perfectionnistes et celles qui n'ont aucun problème avec un peu de rigueur et de discipline.</p>
-                </div>
-                <a href="" class="btn-1">Nous-contactez</a>
-            </div>
-            <div class="col-4-2">
-                <img src="img/vinyasa-yooga.jpg" alt="Vinyasa ">
-                <h4>Pour le fun Vinyasa yoga</h4>
-                <div class="practice-info">
-                    <p>Une version adoucie, plus libre et plus accessible de l'ashtanga traditionnel, mais qui reste très dynamique.</p>
-                    <p>Pas de répit, les positions s'enchaînent de façon fluide dans un mouvement presque chorégraphié, généralement rythmé par une playlists entraînante.</p>
-                    <p>Celles qui sont à la recherche d'un yoga tonique pour raffermir les muscles et toutes celles allergiques à la routine.</p>
-                </div>
-                <a href="" class="btn-1">Nous-contactez</a>
-            </div>
-            <div class="col-4-2">
-                <img src="img/kundalini-yoga.jpg" alt="kundalini">
-                <h4>Développement spirituel Kundalini yoga</h4>
-                <div class="practice-info">
-                    <p>Une discussion avec soi-même pour accéder à un lâcher-prise et ouvrir son coeur. "Le Kundalini signifie l'éveil de la conscience".</p>  
-                    <p>Si la discipline peut paraître contemplative, on travaille, physiquement et mentalement. Pas d'enchaînement de postures mais surtout des exercices de respiration et quelques récitations de mantras -des affirmations positives- sous la forme de chants collectifs. Une expérience galvanisante. </p>
-                    <p>Celles qui souhaitent se reconnecter avec leurs émotions, leur moi profond et envisager la vie de manière plus apaisée. </p>
-                </div>
-                <a href="" class="btn-1">Nous-contactez</a>
             </div>
         </div>
     </div>
-    <!--PRACTICES END-->
 
    
     <!-- FOOTER -->
@@ -117,7 +99,7 @@
                         <li>Yoga for Mobility</li>
                     </ul>
                 </div>
-                <div class="footer-col-4-2">
+                <div class="footer-col-4">
                     <h5>SUIVEZ-NOUS</h5>
                     <ul>
                         <li><i class="fab fa-facebook"></i></li>
@@ -146,9 +128,20 @@
 
         }
     }
+    </script>
+    <!-- JS FOR TOGGLE FORM -->
+    <script>
+        let LoginForm = document.getElementById("LoginForm");
+        let RegForm = document.getElementById("RegForm");
+        let Indicator = document.getElementById("Indicator");
+
+        function regidter() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+        }
+
 
     </script>
-    <script></script>
     <div class="scroll-btn">
         <i class="fas fa-chevron-up"></i>
     </div>
