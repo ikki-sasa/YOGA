@@ -510,6 +510,17 @@ form a {
     transition:0.3s ease-in-out;
     transition-delay: 0.2s;
   }
+
+  .main .slider .slides:before {
+      position: absolute;
+      content: '';
+      background-color: rgba(0, 0, 0, 0.5); 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
   .main .slider .slides.current{
     z-index:1;
     opacity:1;
@@ -560,11 +571,11 @@ form a {
   }
 
   .main .slider .slides.current h1 {
-      animation: animatedheading 4s forwards 1;
+      animation: animateheading 3.5s forwards 1;
       animation-delay: 0.3s;
   }
 
-  @keyframes animatedheading {
+  @keyframes animateheading {
       to {
           margin-left: 0;
       }
@@ -590,7 +601,34 @@ form a {
           margin-right: 0;
       }
   }
-  
+
+  .main i {
+      position: fixed;
+     color: #f5ebd8;     
+      font-size: 0.80em;
+      z-index: 99999;
+      cursor: pointer;
+  }
+  #prev {
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 700;
+      transition: 0.3s ease-in-out;
+    }
+  #next {
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 700;
+        transition: 0.3s ease-in-out;
+  }
+
+  .main i.prev:hover,
+  .main i.next:hover {
+      background: #847577;
+      border-color: #847577;
+  }
   
 
 /* TEACHERS PAGE ENDS */
