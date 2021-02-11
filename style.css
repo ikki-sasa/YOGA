@@ -41,6 +41,7 @@ nav ul li {
     display: inline-block;
     margin-right: 20px;
     font-size: 20px;
+    text-decoration: none;
 
 }
 .cart {
@@ -514,7 +515,6 @@ form a {
   .main .slider .slides:before {
       position: absolute;
       content: '';
-      background-color: rgba(0, 0, 0, 0.5); 
       top: 0;
       left: 0;
       width: 100%;
@@ -526,37 +526,32 @@ form a {
     opacity:1;
   }
   .main .slider .slides:nth-child(1){
-    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('img/Navisha-Baan.jpg');
-    background-size:cover;
-    background-attachment:fixed;
+    background:url('img/Navisha-Baan.jpg');
+    background-size:70%;
     background-position:center;
     background-repeat:no-repeat;
   }
   .main .slider .slides:nth-child(2){
-    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('img/Naara-Lestshoo.jpg');
-    background-size:cover;
-    background-attachment:fixed;
+    background:url('img/Naara-Lestshoo.jpg');
+    background-size:70%;
     background-position:center;
     background-repeat:no-repeat;
   }
   .main .slider .slides:nth-child(3){
-    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('img/Ubuntu-Kipoko.jpg');  
-    background-size:cover;
-    background-attachment:fixed;
+    background:url('img/Ubuntu-Kipoko.jpg');  
+    background-size:70%;
     background-position:center;
     background-repeat:no-repeat;
   }
   .main .slider .slides:nth-child(4){
-    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('img/Elly-Alleystone.jpg');
-    background-size:cover;
-    background-attachment:fixed;
+    background:url('img/Elly-Alleystone.jpg');
+    background-size:70%;
     background-position:center;
     background-repeat:no-repeat;
   }
   .main .slider .slides:nth-child(5){
-    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('img/Niaraa-Obodyolo.jpg'); 
-    background-size:cover;
-    background-attachment:fixed;
+    background:url('img/Niaraa-Obodyolo.jpg'); 
+    background-size:70%;
     background-position:center;
     background-repeat:no-repeat;
   }
@@ -571,8 +566,8 @@ form a {
   }
 
   .main .slider .slides.current h1 {
-      animation: animateheading 3.5s forwards 1;
-      animation-delay: 0.3s;
+      animation: animateheading 2.5s forwards 1;
+      animation-delay: 0.9s;
   }
 
   @keyframes animateheading {
@@ -593,7 +588,7 @@ form a {
 
   .main .slider .slides.current p {
       animation: animateParagraph 6s forwards 1;
-      animation-delay: 0.3s;
+      animation-delay: 0.9s;
   }
 
   @keyframes animateParagraph {
@@ -606,7 +601,7 @@ form a {
     position: absolute;
     color:#fff;
     top:50%;
-    right:1.5%;
+    right:15%;
     transform:translateY(-50%);
     z-index:99;
     font-size:0.5em;
@@ -621,22 +616,22 @@ form a {
     box-shadow:0px 2px 5px rgba(0, 0, 0, 0.1);
     }
   .main .next {
-  position: absolute;
-  color:#fff;
-  top:50%;
-  left:1.5%;
-  transform:translateY(-50%);
-  z-index:99;
-  font-size:0.5em;
-  font-weight:600; 
-  padding:10px 17px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%; 
-  transition:0.2s ease-in-out;
-  cursor:pointer;
-  box-shadow:0px 2px 15px rgba(0, 0, 0, 0.01);
+    position: absolute;
+    color:#fff;
+    top:50%;
+    left:15%;
+    transform:translateY(-50%);
+    z-index:99;
+    font-size:0.5em;
+    font-weight:600; 
+    padding:10px 17px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%; 
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+    box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
   }
 
   .main .prev:hover,
@@ -701,4 +696,30 @@ form a {
         margin: -60px;
         margin-bottom: -50px;
     }
-}
+/* TEACHERS PAGE */
+    .main .slider{
+        position:relative;
+        min-height: 100vh;
+      }
+
+      .main .slider .slides h1 {
+        font-size: 1.5em;
+      }
+
+      .main .slider .slides p {
+        font-size: 0.20em;
+      }
+
+      /* .main .slider .slides:nth-child(1), .main .slider .slides.current, .main .slider .slides:nth-child(2), .main .slider .slides:nth-child(3), .main .slider .slides:nth-child(4), .main .slider .slides:nth-child(5){
+        background:url('img/Navisha-Baan.jpg');
+        background:url('img/Naara-Lestshoo.jpg');
+        background:url('img/Ubuntu-Kipoko.jpg');  
+        background:url('img/Elly-Alleystone.jpg');
+        background:url('img/Niaraa-Obodyolo.jpg'); 
+        background-size:70%;
+        background-position:center;
+        background-repeat:no-repeat;
+      } */
+     
+    }
+      
