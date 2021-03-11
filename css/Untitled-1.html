@@ -1,10 +1,11 @@
+<!-- VERSION DE BASES -->
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Amoureux du Chocolat - Acceuil</title>
+    <title>Login Se connecter</title>
     <link rel="icon" href="img/logo_header.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/solid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- scroll button top -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="js/main.js">
     <link rel="stylesheet" href="js/slider.js">
 </head>
@@ -122,146 +124,37 @@
             </div>
         </div>
     </header>
-    <!-- CATEGORIES -->
-    <div class="categories">
-        <div class="small-container">
-            <h2 class="title">La Selection du Moment</h2>
-            <div class="main">
-                <div class="slider" id="slider">
-                    <div class="slides current">
-                        <img src="img/mini-box.jpg" alt="les-amoureux-du-chocolat-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="slides">
-                        <img src="img/orangettes.jpg" alt="les-amoureux-du-chocolat-orangettes">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="slides">
-                        <h1>Ubuntu Kipoko</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="slides">
-                        <h1>Elly Alleystone</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="slides slidelast">
-                        <h1>Niaraa Obodyolo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <i class="fas fa-chevron-right prev" id="prev"></i>
-                <i class="fas fa-chevron-left next" id="next"></i>
-                <!-- <a href="#">START HERE</a> -->
-            </div>
-        </div>
-    </div>
-    <!-- CATEGORIES END -->
-
-    <!--LES AMOUREUX DU CHOCOLAT START-->
-    <div class="small-container">
-        <h2 class="title">Les Amoureux du chocolat</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="img/Moules-fox-redi.jpg" alt="Moules">
-                <h4>Nos Créations </h4>
-                <a href="practice.html" class="btn-1">Découvrir</a>
-            </div>
-            <div class="col-4">
-                <img src="img/Passion.jpg" alt="passion">
-                <h4>Nos Délices</h4>
-                <a href="practice.html" class="btn-1">Découvrir</a>
-            </div>
-            <div class="col-4">
-                <img src="img/Praliné amandesnoisettes lait.jpg" alt="amandesnoisettes">
-                <h4>Nos Pralinés</h4>
-                <a href="practice.html" class="btn-1">Découvrir</a>
-            </div>
-            <div class="col-4">
-                <img src="img/Mendiants noir.jpg" alt="Mendiants">
-                <h4>Nos Gourmandises</h4>
-                <a href="practice.html" class="btn-1">Découvrir</a>
-            </div>
-        </div>
-    </div>
-    <!--LES AMOUREUX DU CHOCOLAT END-->
-
-    <!--reviews AVIS REVIEWS  -->
-    <!-- <div class="reviews">
-        <div class="small-container">
-            <h2 class="title">Éxpériences élèves</h2>
+    <div class="account-page">
+        <div class="container">
             <div class="row">
-                <div class="col-5">
-                    <i class="fas fa-quote-left"></i>
-                    <p>« Iyengar Lorem ipsum dolor sit amet consectetur adipisicing elit.»</p>
-                    <i class="fas fa-quote-right"></i>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <img src="/img/user-1.jpg" alt="review-1">
-                    <h3>Inada T.</h3>
+                <div class="col-2">
+                    <img src="img/nos-creations.jpg" alt="les-amoureux-du-chocolat">
                 </div>
-                <div class="col-5">
-                    <i class="fas fa-quote-left"></i>
-                    <p>« Iyengar Lorem ipsum dolor sit amet consectetur adipisicing elit.»</p>
-                    <i class="fas fa-quote-right"></i>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Se connecter</span>
+                            <span onclick="register()">S'enregistrer</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Nom utilisateur">
+                            <input type="text" placeholder="Mot de passe">
+                            <button type="submit" class="btn">Se connecter</button>
+                            <a href="">Mot de passe oublié</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Nom utilisateur">
+                            <input type="Adresse mail" placeholder="Adresse mail">
+                            <input type="text" placeholder="Mot de passe">
+                            <button type="submit" class="btn">S'enregistrer</button>
+                        </form>
                     </div>
-                    <img src="/img/user-2.jpg" alt="review-1">
-                    <h3>Ademi Y.</h3>
-                </div>
-                <div class="col-5">
-                    <i class="fas fa-quote-left"></i>
-                    <p>« Iyengar Lorem ipsum dolor sit amet consectetur adipisicing elit.»</p>
-                    <i class="fas fa-quote-right"></i>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <img src="/img/user-3.jpg" alt="review-1">
-                    <h3>Yoko O.</h3>
-                </div>
-                <div class="col-5">
-                    <i class="fas fa-quote-left"></i>
-                    <p>« Iyengar Lorem ipsum dolor sit amet consectetur adipisicing elit.»</p>
-                    <i class="fas fa-quote-right"></i>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <img src="/img/user-4.jpg" alt="review-1">
-                    <h3>Raul G.</h3>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- FERMETURE reviews AVIS REVIEWS  -->
-    <!--QUI NOUS SOMMES? START  -->
-    <div class="about">
-        <div class="small-container">
-            <h2 class="title">Qui nous sommes?</h2>
-            <div class="row">
-                <div class="col-6">
-                    <a href="#" target="_blank"><img src="img/choco-bg-ft.jpg" alt="choco-fondu"></a>
-                    <a href="index.html" class="btn-2">En savoir plus</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--QUI NOUS SOMMES? ENDS-->
     <!-- FOOTER -->
     <footer class="footer">
         <h5>JE M'INSCRIS À LA NEWSLETTER !</h5>
@@ -277,9 +170,9 @@
                 <div class="footer-col-1">
                     <h6>INFORMATIONS</h6>
                     <ul>
-                        <li><a href="mentions.html">Mentions légales <i class="fas fa-file-contract"></i></a></li>
-                        <li><a href="vente.html">Conditions générales de vente <i class="fas fa-handshake"></i></a></li>
-                        <li><a href="cookies.html">Politique d'utilisation des cookies <i class="fas fa-cookie-bite"></i> </a></li>
+                        <li><a href="mentions.html">Mentions légales </a></li>
+                        <li><a href="vente.html">Conditions générales de vente </a></li>
+                        <li><a href="#">Politique d'utilisation des cookies </a></li>
                     </ul>
                 </div>
                 <div class="footer-col-2">
@@ -313,3 +206,4 @@
 </body>
 
 </html>
+
