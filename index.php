@@ -2,37 +2,16 @@
     include_once 'header.php';
 
 ?>
+<?php
+if (isset($_SESSION["useruid"])) {
+                                    echo'<p>Bonjour est bienvenue " . $_SESSION["useruid"] . "</p>';
+                                    // echo'<li><a href="includes/logout.inc.php">Log out</a></li>';
+                                }
+                                // else {
+                                //     echo'<li><a href="signup.php">Sign up</a></li>';
+                                //     echo'<li><a href="login.php">Log in</a></li>';
+                                // }
+?>
+ 
 
-  <!--<div class="account-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="img/yoga-day.jpg"  alt="yoga-day">
-                </div>
-                <div class="col-2">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="login()">Se connecter</span>
-                            <span onclick="register()">S'enregistrer</span>
-                            <hr id="Indicator">
-                        </div>
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Nom utilisateur">
-                            <input type="text" placeholder="Mot de passe">
-                            <button type="submit" class="btn">Se connecter</button>
-                            <a href="">Mot de passe oublié</a>
-                        </form>
-
-                        <form id="RegForm">
-                            <input type="text" placeholder="Nom utilisateur">
-                            <input type="Adresse mail" placeholder="Adresse mail">
-                            <input type="text" placeholder="Mot de passe">
-                            <button type="submit" class="btn">S'enregistrer</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-   -->
-   
+ 

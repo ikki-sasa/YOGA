@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -28,9 +33,17 @@
                             <ul id="MenuItems">
                                 <li><a href="index.html">Acceuil</a></li>
                                 <li><a href="practice.html">Practice</a></li>
-                                <li><a href="teachers.html">A propos</a></li>                                
-                                <li><a href="signup.php">Sign up</a></li>
-                                <li><a href="login.php">Log in</a></li>
+                                <li><a href="teachers.html">A propos</a></li>   
+                                <?php
+                                if (isset($_SESSION["useruid"])) {
+                                    echo'<li><a href="profile.php">Profile page</a></li>';
+                                    echo'<li><a href="includes/logout.inc.php">Log out</a></li>';
+                                }
+                                else {
+                                    echo'<li><a href="signup.php">Sign up</a></li>';
+                                    echo'<li><a href="login.php">Log in</a></li>';
+                                }
+                                ?>                             
                             </ul>
                         </nav>
                     </div>

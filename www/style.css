@@ -1,0 +1,726 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background: radial-gradient(#fef9ef, #f5ebd8);
+}
+
+.header .row {
+    margin-top: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-ul-li {
+    margin-left: 20%;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.cart {
+    width: 30px; 
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: sienna;
+}
+
+p {
+    color: sienna;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 80px;
+    line-height: 90px;
+    padding: 5px;
+    padding-bottom: 20px; 
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: blanchedalmond;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 1s;
+}
+
+.btn:hover {
+    background: #847577;
+}
+
+/* CATEGORIES  */
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* PRACTICES */
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #847577;
+}
+
+.title::after {
+    content: '';
+    background: #847577;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-4 {
+    flex-basis: 45%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 10px;
+    transition: transform 1.5s;
+}
+
+.col-4 img {
+    width: 100%;
+    cursor: pointer;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+h4 {
+    color: #847577;
+    /* text-align: center; */
+    font-weight: 600;
+    font-size: 1.5em; 
+}
+
+
+.levels {
+    color: chocolate;
+    /* text-align: center;  */
+    margin-top: 15px;
+    font-size: 1.2em; 
+}
+
+.btn-1 {
+    display: inline-block;
+    background: black;
+    color: blanchedalmond;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 1s;
+    /* text-align: center; */
+    /* margin-left: 17%; */
+    margin-top: 10px;
+
+}
+
+.btn-1:hover {
+    background: #847577;
+}
+
+/* REVIEWS AVIS */
+
+.reviews {
+    padding-top: 25px;
+}
+
+.reviews .col-5 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 2.5s;
+}
+
+.reviews .col-5 img {
+    width: 160px;
+    margin-top: 20px;
+    border-radius: 35%;
+}
+
+.reviews .col-5:hover {
+    transform: translateY(-5px);
+    background: blanchedalmond;
+}
+
+.reviews .col-5 h3 {
+    font-weight: 600;
+    font-size: 1.5em;       
+}
+
+.col-5 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col-5 p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.rating {
+    color: chocolate;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+/* BRANDS */
+.brands {
+    margin: 100px auto;
+}
+
+.col-6 {
+    width: 160px;
+}
+
+.col-6 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-6 img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* FOOTER */
+
+
+.footer {
+    background: #f5ebd8;
+    font-size: 14px; 
+    padding: 60px 0 20px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+ }
+
+h5 {
+     font-size: 20px;
+ } 
+
+ .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 100px;
+    /* margin-bottom: auto;  DÉCALE TOUT NE TOUCHE PAS*/
+    
+}
+
+
+/*
+.logo-eryt {
+    margin-left: 90%;      /*A MODIFIER POUR MEDIA QUERRY PHONE
+}  */
+
+
+.footer-1 {
+    background: #f7e0b7;
+    font-size: 12px; 
+    padding: 60px 0 2px;
+    padding-top: 2px;
+    text-align: center;
+ }
+
+ ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 15px;
+    padding-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: sienna;  
+}
+.fab {
+    font-size: 1.5em; 
+}
+.fa-facebook:hover {
+    color:#3b5999;
+}
+.fa-pinterest:hover {
+    color: #bd081c;
+}
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+/* FOOTER END*/
+
+.menu-icon {
+    width: 28px;
+    margin-left: 10px;
+    display: none;
+}
+.scroll-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.20;
+}
+
+.scroll-btn:hover {
+    color: #482620;
+}
+
+/*PRCATICES START PAGE*/
+/* .practice-info {
+
+} */
+
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+
+.col-4-2 {
+    flex-basis: 45%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.col-4-2 img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 55px;
+}
+
+.col-4-2 h4 {
+    font-size: 2.5em;
+    text-align: center; 
+    font-weight: 600;
+}
+
+.col-4-2 p {
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+}
+
+/*PRCATICES END PAGE*/
+
+/*ACCOUNT-PAGE START */
+
+.account-page {
+    padding:50px;
+    background: whitesmoke; 
+  
+}
+
+.span{
+    color: black;
+}
+
+.form-container{
+    background: #f5ebd8;
+    width: 300px;
+    height: 460px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    color: black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding:  0 20px;
+    padding-top: 50px;
+    /* position: absolute; */
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #847577;
+    border-radius: 20px;
+}
+
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+        outline: none;
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+    color: black;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: black;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+/*ACCOUNT-PAGE ENDS */
+
+
+/* TEACHERS PAGE START JS SLIDERS*/
+.main{
+    position:relative;
+    height:100vh;
+    width:100%;
+    color:#fff;
+  }
+  .main .slider{
+    position:relative;
+    height:100vh;
+    width:100%;
+  }
+  .main .slider .slides{
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    transition-delay: 0.2s;
+  }
+
+  .main .slider .slides:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+  .main .slider .slides.current{
+    z-index:1;
+    opacity:1;
+  }
+  .main .slider .slides:nth-child(1){
+    background:url('img/Navisha-Baan.jpg');
+    background-size:70%;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(2){
+    background:url('img/Naara-Lestshoo.jpg');
+    background-size:70%;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(3){
+    background:url('img/Ubuntu-Kipoko.jpg');  
+    background-size:70%;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(4){
+    background:url('img/Elly-Alleystone.jpg');
+    background-size:70%;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(5){
+    background:url('img/Niaraa-Obodyolo.jpg'); 
+    background-size:70%;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+
+  .main .slider .slides h1 {
+    font-size: 4.5em;
+    font-weight: 750;
+    color: #f5ebd8;
+    text-shadow: 0px 0.5px 15px rgba(0, 0, 0, 0.5);
+    margin-left: -500%;
+    transition: 0.3s linear;
+  }
+
+  .main .slider .slides.current h1 {
+      animation: animateheading 2.5s forwards 1;
+      animation-delay: 0.9s;
+  }
+
+  @keyframes animateheading {
+      to {
+          margin-left: 0;
+      }
+  }
+
+  .main .slider .slides p {
+    font-size: 0.90em;
+    font-weight: 600;
+    color: #f5ebd8;
+    text-shadow: 0px 0.5px 15px rgba(0, 0, 0, 0.5);
+    margin-right: -500%;
+    transition: 5.3s linear;
+
+  }
+
+  .main .slider .slides.current p {
+      animation: animateParagraph 6s forwards 1;
+      animation-delay: 0.9s;
+  }
+
+  @keyframes animateParagraph {
+      to {
+          margin-right: 0;
+      }
+  }
+
+  .main .prev {
+    position: absolute;
+    color:#fff;
+    top:50%;
+    right:15%;
+    transform:translateY(-50%);
+    z-index:99;
+    font-size:0.5em;
+    font-weight:600;
+    padding:10px 17px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%; 
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+    box-shadow:0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  .main .next {
+    position: absolute;
+    color:#fff;
+    top:50%;
+    left:15%;
+    transform:translateY(-50%);
+    z-index:99;
+    font-size:0.5em;
+    font-weight:600; 
+    padding:10px 17px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%; 
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+    box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .main .prev:hover,
+  .main .next:hover {
+      background: #847577;
+      border-color: #847577;
+  }
+/* TEACHERS PAGE ENDS JS SLIDERS */
+
+
+
+
+
+/* MEDIA QUERY MENU */
+
+@media screen  and (max-width:900px ) {
+
+    nav ul {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background: #f7e0b7;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-left: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+} 
+
+/* MEDIA QUERY Phones */
+
+@media screen  and (max-width:600px ) {
+    
+    .row {
+        text-align: center;
+
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+
+    .menu-icon {
+        margin: -60px;
+        margin-bottom: -38px;
+    }
+
+    .cart {
+        margin: -60px;
+        margin-bottom: -50px;
+    }
+/* TEACHERS PAGE */
+    .main .slider{
+        position:relative;
+        min-height: 100vh;
+      }
+
+      .main .slider .slides h1 {
+        font-size: 1.5em;
+      }
+
+      .main .slider .slides p {
+        font-size: 0.20em;
+      }
+
+      /* .main .slider .slides:nth-child(1), .main .slider .slides.current, .main .slider .slides:nth-child(2), .main .slider .slides:nth-child(3), .main .slider .slides:nth-child(4), .main .slider .slides:nth-child(5){
+        background:url('img/Navisha-Baan.jpg');
+        background:url('img/Naara-Lestshoo.jpg');
+        background:url('img/Ubuntu-Kipoko.jpg');  
+        background:url('img/Elly-Alleystone.jpg');
+        background:url('img/Niaraa-Obodyolo.jpg'); 
+        background-size:70%;
+        background-position:center;
+        background-repeat:no-repeat;
+      } */
+     
+    }
+      
