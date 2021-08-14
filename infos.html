@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Compte</title>
+    <title>Contact</title>
     <link rel="icon" href="img/logo_header.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,21 +46,6 @@
                 <div class="logo">
                     <a href="index.html"><img src="img/les-amoureux-du-chocolat-logo.png" alt="logo-brand"></a>
                 </div>
-<<<<<<< HEAD
-                    <div class="nav-ul-li">
-                        <nav>
-                            <ul id="MenuItems">
-                                <li><a href="index.html">Acceuil</a></li>
-                                <li><a href="practice.html">Practice</a></li>
-                                <li><a href="teachers.html">A propos</a></li>                        
-                                <li><a href="account.html">Compte</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <a href="practice.html"><img  class="cart" src="img/cart.png"  alt="cart"></a>
-                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu">
-                <!-- <i class="fab fa-opencart"></i> -->
-=======
                 <!--START SEARCH BAR-->
                 <div class="row">
                     <div class="search">
@@ -134,63 +119,89 @@
                         </nav>
                     </div>
                 </div>
->>>>>>> 706ad0924995a55a0dff9688369335b86be7436b
             </div>
         </div>
     </header>
-    <div class="account-page">
-        <div class="container">
-            <div class="row">
-<<<<<<< HEAD
-                <div class="col-2">
-                    <img src="img/yoga-day.jpg"  alt="yoga-day">                    
-=======
-                <div class="col-8">
-                    <img src="img/nos-creations.jpg" alt="les-amoureux-du-chocolat">
->>>>>>> 706ad0924995a55a0dff9688369335b86be7436b
-                </div>
-                <div class="col-8">
-                    <div class="form-container-account">
-                        <div class="form-btn">
-                            <span onclick="login()">Se connecter</span>
-                            <span onclick="register()">S'enregistrer</span>
-                            <hr id="Indicator">
-                            <div class="small-logo">
-                                <!-- <img src="img/logo_header.png" alt="les-amoureux-du-chocolat-logo-heart"> -->
+
+    <!--NOUS CONTACTER START-->
+    <div class="main">
+        <div class="slider" id="slider">
+            <h2 class="title-info">Notre boutique</h2>
+            <div class="slides current">
+                <img src="img/apropos-de-nous-acceuil.png" alt="Les amoureux du chocolat boutique1">
+            </div>
+            <div class="slides">
+                <img src="img/apropos-de-nous-acceuil1.1.png" alt="Les amoureux du chocolat boutique2">
+            </div>
+            <div class="slides slidelast">
+                <img src="img/apropos-de-nous-boutique1.png" alt="Les amoureux du chocolat boutique3">
+            </div>
+        </div>
+        <i class="fas fa-chevron-right prev" id="prev"></i>
+        <i class="fas fa-chevron-left next" id="next"></i>
+    </div>
+    <div class="container">
+        <h4 class="title-adress">Plan d'accès</h4>
+        <div class="row-adress">
+            <div class="col-5">
+                <ul>
+                    <li>Chocolaterie Les Amoureux du Chocolat</li>
+                    <li><i class='bx bxs-map-pin'></i>9 Place de l'Union Européenne</li>
+                    <li>91300 Massy</li>
+                    <li><i class='bx bxs-train'></i>Face à la gare RER C Massy-Palaiseau</li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.0370898038914!2d2.2565710807021016!3d48.726929168946555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6782f88f6b663%3A0x25697d4e585c22f1!2sChocolaterie%20Les%20Amoureux%20du%20Chocolat!5e0!3m2!1sfr!2sfr!4v1615215917300!5m2!1sfr!2sfr"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </ul>
+            </div>
+
+            <div class="col-5">
+                <h4>NOUS CONTACTER</h4>
+                <div class="infos-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="form-container">
+                                    <fieldset>
+                                        <label for="name">Nom *</label>
+                                        <input type="text" placeholder="" required>
+                                        <label for="firstname">Prénom *</label>
+                                        <input type="text" placeholder="" required>
+                                        <label for="phone">Téléphone *</label>
+                                        <input type="text" placeholder="" required>
+                                        <label for="mail">E-mail *</label>
+                                        <input type="text" placeholder="" required>
+                                        <label for="Message">Message *</label>
+                                        <textarea class="field-area"></textarea>
+                                        <button type="submit" class="btn-3">Envoyez</button>
+                                    </fieldset>
+                                </div>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Nom utilisateur">
-                            <input type="password" placeholder="Mot de passe">
-                            <button type="submit" class="btn">Se connecter</button>
-                            <a href="">Mot de passe oublié</a>
-                        </form>
-
-                        <form id="RegForm">
-                            <input type="text" placeholder="Nom utilisateur">
-                            <input type="email" placeholder="Email">
-                            <button type="submit" class="btn">S'enregistrer</button>
-=======
-                        <form id="LoginForm" action="">
-                            <input type="text" placeholder="Nom utilisateur" required>
-                            <input type="password" placeholder="Mot de passe" required>
-                            <button type="submit" class="btn-form"><i class="fas fa-user"></i>Se connecter</button>
-                            <a href="">Mot de passe oublié?</a>
-                        </form>
-
-                        <form id="RegForm" action="">
-                            <input type="text" placeholder="Nom utilisateur" required>
-                            <input type="Adresse mail" placeholder="Adresse mail" required>
-                            <input type="password" placeholder="Mot de passe" required>
-                            <button type="submit" class="btn-form"><i class="fas fa-lock"></i>S'enregistrer</button>
->>>>>>> 706ad0924995a55a0dff9688369335b86be7436b
-                        </form>
-                    </div>                    
+                    </div>
                 </div>
+
+                <ul>
+                    <li><i class="fas fa-at"></i>E-mail : contact@lesamoureuxduchocolat.com</li>
+                    <li><i class="fas fa-phone-square-alt"></i>Téléphone : 01 85 41 05 43</li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <h4>HORAIRES D'OUVERTURES</h4>
+                <ul>
+                    <li><i class="fas fa-door-closed"></i>Lundi : boutique fermé</li>
+                    <li>Mardi : 09:30-19:30</li>
+                    <li>Mercredi : 09:30-19:30 </li>
+                    <li>Jeudi : 09:30-19:30 </li>
+                    <li>Vendredi : 09:30-19:30 </li>
+                    <li>Samedi : 09:30-19:30 </li>
+                    <li>Dimanche : 09:30-13:00</li>
+                </ul>
             </div>
         </div>
     </div>
+    <!--NOUS CONTACTER END-->
+
+
     <!-- FOOTER -->
     <footer class="footer">
         <h5>JE M'INSCRIS À LA NEWSLETTER !</h5>
@@ -239,6 +250,7 @@
         <i class="fas fa-chevron-up"></i>
     </div>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
 </body>
 
 </html>
